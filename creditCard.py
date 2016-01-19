@@ -5,7 +5,6 @@ def creditCard(balance, monthlyPaymentRate, annualInterestRate):
         payment = balance*monthlyPaymentRate
         unpaidBalance = balance - payment
         balance = (unpaidBalance + (annualInterestRate/12.0) * unpaidBalance)
-        ## print("Month " + str(i) + " Balance = " + str(b) )
         print("Month: %d \nMinimum monthly payment = %.2f \nRemaining Balance = %.2f \n " % (i, payment, balance))
         total += payment
         i += 1
