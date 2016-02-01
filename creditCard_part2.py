@@ -37,7 +37,7 @@ def lowestPayment(balance, annualInterestRate):
         else:
             upperBound = payment
     payment = math.ceil(payment / 10.0) * 10
-    print ("Lowest Payment: %.2f" % payment)
+    print ("Lowest Payment: %d" % payment)
 
 def main():
     balance = 4773

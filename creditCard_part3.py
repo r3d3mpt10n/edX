@@ -36,11 +36,11 @@ def lowestPayment(balance, annualInterestRate):
             lowerBound = payment
         else:
             upperBound = payment
-    payment = math.ceil(payment / 10.0) * 10
+    #payment = math.ceil(payment / 10.0) * 10
     print ("Lowest Payment: %.2f" % payment)
 
 def main():
-    balance = 4773
+    balance = 320000
     unpaidBalance = 5000
     annualInterestRate = 0.2
     monthlyPaymentRate = 0.02
