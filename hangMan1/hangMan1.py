@@ -40,8 +40,12 @@ def hangman(secretWord):
         else:
             print("You have %s guesses left." % (remain_guess))
             print("Available letters: %s" % (getAvailableLetters(lettersGuessed)))
+         
+            # Why are we enforcing a depreciated standard? raw_input is no longer acceptable in Python 3.
+            # line should read guess = input("Please guess a letter: ").lower()
             guess = raw_input("Please guess a letter: ")
             guess = guess.lower()
+
             if guess in lettersGuessed:
                 print("Oops! You've already guessed that letter: %s" % (getGuessedWord(secretWord, lettersGuessed)))
             elif guess in secretWord:
